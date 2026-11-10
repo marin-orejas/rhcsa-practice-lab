@@ -1,0 +1,21 @@
+<!-- Isolated exam network: no <forward>, so the VMs have no internet. No DHCP: every VM has a static IP. -->
+<network>
+  <name>exam</name>
+  <bridge name='virbr1' stp='on' delay='0'/>
+  <domain name='lab.example.com' localOnly='yes'/>
+  <dns>
+    <host ip='172.25.250.10'>
+      <hostname>infra.lab.example.com</hostname>
+      <hostname>infra</hostname>
+    </host>
+    <host ip='172.25.250.11'>
+      <hostname>node1.lab.example.com</hostname>
+      <hostname>node1</hostname>
+    </host>
+    <host ip='172.25.250.12'>
+      <hostname>node2.lab.example.com</hostname>
+      <hostname>node2</hostname>
+    </host>
+  </dns>
+  <ip address='172.25.250.1' netmask='255.255.255.0'/>
+</network>
