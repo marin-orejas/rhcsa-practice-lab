@@ -3,7 +3,7 @@
 ![Status: active](https://img.shields.io/badge/status-active-1a7f37?style=flat-square)
 [![License](https://img.shields.io/github/license/marin-orejas/rhcsa-practice-lab?style=flat-square)](LICENSE)
 
-A KVM home lab for the Red Hat EX200 exam, where 2 exam servers reset to a fresh install before every practice run.
+KVM home lab for the Red Hat EX200 exam, where 2 exam servers reset to a fresh install before every practice run.
 An infra server gives them repos, NFS, NTP and Flatpak apps on a network with no internet.
 
 A personal practice project, not affiliated with or endorsed by Red Hat, which owns the Red Hat and RHCSA trademarks.
@@ -70,7 +70,7 @@ My own format is 3 h, 300 points and 210 to pass.
 ## Results
 
 My readiness bar is 3 exams in a row at 255/300 or more, within 2 h 30 min, with no area under 70%.
-Every run is on the [practice results](docs/practice-results.md) page.
+Every run is on the [practice results](practice-results.md) page.
 
 | Runs | Count | Result |
 |---|---|---|
@@ -98,13 +98,6 @@ Only the lab build and the results are public.
 | Install | Kickstart, virt-install, Bash |
 | Services | Apache HTTP Server, NFS, chrony, Flatpak, OSTree, GnuPG |
 | Workstation | Fedora 44, OpenSSH, virt-viewer |
-
-## Project structure
-
-| Folder | Contents |
-|---|---|
-| [`build/`](build/) | Network XML, kickstarts, scripts |
-| [`docs/`](docs/) | Practice results |
 
 ## Roadmap
 
